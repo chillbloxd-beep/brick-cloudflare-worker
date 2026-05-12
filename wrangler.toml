@@ -1,0 +1,14 @@
+name = "brick-classroom-signal"
+main = "src/index.js"
+compatibility_date = "2026-05-01"
+
+[vars]
+SIGNALING_KEY = "CHANGE_ME_SIGNALING_SECRET"
+
+[[durable_objects.bindings]]
+name = "ROOMS"
+class_name = "Room"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Room"]
